@@ -40,9 +40,10 @@ Partial Class Login
         Me.tanca.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.tanca.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.tanca.Image = CType(resources.GetObject("tanca.Image"), System.Drawing.Image)
-        Me.tanca.Location = New System.Drawing.Point(963, 10)
+        Me.tanca.Location = New System.Drawing.Point(722, 8)
+        Me.tanca.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.tanca.Name = "tanca"
-        Me.tanca.Size = New System.Drawing.Size(25, 25)
+        Me.tanca.Size = New System.Drawing.Size(19, 20)
         Me.tanca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.tanca.TabIndex = 0
         Me.tanca.TabStop = False
@@ -52,9 +53,10 @@ Partial Class Login
         Me.minimitzar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.minimitzar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.minimitzar.Image = CType(resources.GetObject("minimitzar.Image"), System.Drawing.Image)
-        Me.minimitzar.Location = New System.Drawing.Point(922, 10)
+        Me.minimitzar.Location = New System.Drawing.Point(692, 8)
+        Me.minimitzar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.minimitzar.Name = "minimitzar"
-        Me.minimitzar.Size = New System.Drawing.Size(25, 25)
+        Me.minimitzar.Size = New System.Drawing.Size(19, 20)
         Me.minimitzar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.minimitzar.TabIndex = 1
         Me.minimitzar.TabStop = False
@@ -63,45 +65,50 @@ Partial Class Login
         '
         Me.adaptarFinestra.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.adaptarFinestra.Image = CType(resources.GetObject("adaptarFinestra.Image"), System.Drawing.Image)
-        Me.adaptarFinestra.Location = New System.Drawing.Point(970, 470)
+        Me.adaptarFinestra.Location = New System.Drawing.Point(728, 382)
+        Me.adaptarFinestra.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.adaptarFinestra.Name = "adaptarFinestra"
-        Me.adaptarFinestra.Size = New System.Drawing.Size(25, 25)
+        Me.adaptarFinestra.Size = New System.Drawing.Size(19, 20)
         Me.adaptarFinestra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.adaptarFinestra.TabIndex = 2
         Me.adaptarFinestra.TabStop = False
         '
         'barraSuperiorMoure
         '
+        Me.barraSuperiorMoure.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.barraSuperiorMoure.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.barraSuperiorMoure.Location = New System.Drawing.Point(0, 0)
+        Me.barraSuperiorMoure.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.barraSuperiorMoure.Name = "barraSuperiorMoure"
-        Me.barraSuperiorMoure.Size = New System.Drawing.Size(916, 40)
+        Me.barraSuperiorMoure.Size = New System.Drawing.Size(687, 32)
         Me.barraSuperiorMoure.TabIndex = 3
         Me.barraSuperiorMoure.TabStop = False
         '
         'barraSuperiorPartBotons
         '
-        Me.barraSuperiorPartBotons.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.barraSuperiorPartBotons.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.barraSuperiorPartBotons.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.barraSuperiorPartBotons.Location = New System.Drawing.Point(915, 0)
+        Me.barraSuperiorPartBotons.Location = New System.Drawing.Point(686, 0)
+        Me.barraSuperiorPartBotons.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.barraSuperiorPartBotons.Name = "barraSuperiorPartBotons"
-        Me.barraSuperiorPartBotons.Size = New System.Drawing.Size(85, 40)
+        Me.barraSuperiorPartBotons.Size = New System.Drawing.Size(64, 32)
         Me.barraSuperiorPartBotons.TabIndex = 4
         Me.barraSuperiorPartBotons.TabStop = False
         '
         'Login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1000, 500)
+        Me.ClientSize = New System.Drawing.Size(750, 406)
         Me.Controls.Add(Me.barraSuperiorPartBotons)
         Me.Controls.Add(Me.barraSuperiorMoure)
         Me.Controls.Add(Me.adaptarFinestra)
         Me.Controls.Add(Me.minimitzar)
         Me.Controls.Add(Me.tanca)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Login"
         Me.Text = "Login"
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).EndInit()
