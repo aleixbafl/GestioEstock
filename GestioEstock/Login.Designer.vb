@@ -25,8 +25,10 @@ Partial Class Login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.tanca = New System.Windows.Forms.PictureBox()
         Me.minimitzar = New System.Windows.Forms.PictureBox()
+        Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tanca
@@ -51,12 +53,24 @@ Partial Class Login
         Me.minimitzar.TabIndex = 1
         Me.minimitzar.TabStop = False
         '
+        'adaptarFinestra
+        '
+        Me.adaptarFinestra.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.adaptarFinestra.Image = CType(resources.GetObject("adaptarFinestra.Image"), System.Drawing.Image)
+        Me.adaptarFinestra.Location = New System.Drawing.Point(970, 470)
+        Me.adaptarFinestra.Name = "adaptarFinestra"
+        Me.adaptarFinestra.Size = New System.Drawing.Size(25, 25)
+        Me.adaptarFinestra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.adaptarFinestra.TabIndex = 2
+        Me.adaptarFinestra.TabStop = False
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1000, 500)
+        Me.Controls.Add(Me.adaptarFinestra)
         Me.Controls.Add(Me.minimitzar)
         Me.Controls.Add(Me.tanca)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -64,10 +78,12 @@ Partial Class Login
         Me.Text = "Login"
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents tanca As PictureBox
     Friend WithEvents minimitzar As PictureBox
+    Friend WithEvents adaptarFinestra As PictureBox
 End Class
