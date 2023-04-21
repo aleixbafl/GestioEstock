@@ -43,4 +43,27 @@
             Me.Height = Cursor.Position.Y - Me.Top
         End If
     End Sub
+    'Quant clique a la barra superior
+    Private Sub barraSuperiorMoure_MouseDown(sender As Object, e As MouseEventArgs) Handles barraSuperiorMoure.MouseDown
+        If e.Button = MouseButtons.Left Then
+            mouse_offset = New Point(e.Location.X, e.Location.Y)
+            Me.SuspendLayout() ' Desactivar redimensionamiento de la ventana
+        End If
+    End Sub
+
+    Private Sub barraSuperiorMoure_MouseMove(sender As Object, e As MouseEventArgs) Handles barraSuperiorMoure.MouseMove
+        If e.Button = MouseButtons.Left Then
+            Me.Left = Cursor.Position.X - mouse_offset.X
+            Me.Top = Cursor.Position.Y - mouse_offset.Y
+        End If
+    End Sub
+
+    Private Sub barraSuperiorMoure_MouseUp(sender As Object, e As MouseEventArgs) Handles barraSuperiorMoure.MouseUp
+        Me.ResumeLayout()
+    End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        tanca.BringToFront()
+        minimitzar.BringToFront()
+    End Sub
 End Class
