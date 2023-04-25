@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Login
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class MenuPrinEmpleat
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,9 @@ Partial Class Login
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuPrinEmpleat))
         Me.tanca = New System.Windows.Forms.PictureBox()
         Me.minimitzar = New System.Windows.Forms.PictureBox()
         Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
@@ -41,7 +41,7 @@ Partial Class Login
         Me.tanca.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.tanca.Image = CType(resources.GetObject("tanca.Image"), System.Drawing.Image)
         Me.tanca.Location = New System.Drawing.Point(872, 8)
-        Me.tanca.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tanca.Margin = New System.Windows.Forms.Padding(2)
         Me.tanca.Name = "tanca"
         Me.tanca.Size = New System.Drawing.Size(19, 20)
         Me.tanca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -54,7 +54,7 @@ Partial Class Login
         Me.minimitzar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.minimitzar.Image = CType(resources.GetObject("minimitzar.Image"), System.Drawing.Image)
         Me.minimitzar.Location = New System.Drawing.Point(842, 8)
-        Me.minimitzar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.minimitzar.Margin = New System.Windows.Forms.Padding(2)
         Me.minimitzar.Name = "minimitzar"
         Me.minimitzar.Size = New System.Drawing.Size(19, 20)
         Me.minimitzar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -66,7 +66,7 @@ Partial Class Login
         Me.adaptarFinestra.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.adaptarFinestra.Image = CType(resources.GetObject("adaptarFinestra.Image"), System.Drawing.Image)
         Me.adaptarFinestra.Location = New System.Drawing.Point(878, 476)
-        Me.adaptarFinestra.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.adaptarFinestra.Margin = New System.Windows.Forms.Padding(2)
         Me.adaptarFinestra.Name = "adaptarFinestra"
         Me.adaptarFinestra.Size = New System.Drawing.Size(19, 20)
         Me.adaptarFinestra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -79,7 +79,7 @@ Partial Class Login
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.barraSuperiorMoure.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.barraSuperiorMoure.Location = New System.Drawing.Point(0, 0)
-        Me.barraSuperiorMoure.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.barraSuperiorMoure.Margin = New System.Windows.Forms.Padding(2)
         Me.barraSuperiorMoure.Name = "barraSuperiorMoure"
         Me.barraSuperiorMoure.Size = New System.Drawing.Size(837, 32)
         Me.barraSuperiorMoure.TabIndex = 3
@@ -90,7 +90,7 @@ Partial Class Login
         Me.barraSuperiorPartBotons.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.barraSuperiorPartBotons.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.barraSuperiorPartBotons.Location = New System.Drawing.Point(836, 0)
-        Me.barraSuperiorPartBotons.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.barraSuperiorPartBotons.Margin = New System.Windows.Forms.Padding(2)
         Me.barraSuperiorPartBotons.Name = "barraSuperiorPartBotons"
         Me.barraSuperiorPartBotons.Size = New System.Drawing.Size(64, 32)
         Me.barraSuperiorPartBotons.TabIndex = 4
@@ -108,7 +108,7 @@ Partial Class Login
         Me.Controls.Add(Me.minimitzar)
         Me.Controls.Add(Me.tanca)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Login"
         Me.Text = "Login"
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).EndInit()

@@ -1,4 +1,4 @@
-﻿Public Class Login
+﻿Public Class MenuPrinEmpleat
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -65,5 +65,9 @@
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+
     End Sub
 End Class
