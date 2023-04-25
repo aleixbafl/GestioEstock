@@ -12,3 +12,4 @@ D:\estudis\git_hub_descktop\GestioEstock\GestioEstock\obj\Debug\GestioEstock.exe
 D:\estudis\git_hub_descktop\GestioEstock\GestioEstock\obj\Debug\GestioEstock.xml
 D:\estudis\git_hub_descktop\GestioEstock\GestioEstock\obj\Debug\GestioEstock.pdb
 D:\estudis\git_hub_descktop\GestioEstock\GestioEstock\obj\Debug\GestioEstock.MenuPrincipalEmpleat.resources
+D:\estudis\git_hub_descktop\GestioEstock\GestioEstock\obj\Debug\GestioEstock.MenuPrinEmpleat.resources

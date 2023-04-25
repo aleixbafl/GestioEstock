@@ -25,14 +25,15 @@ Partial Class MenuPrinEmpleat
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuPrinEmpleat))
         Me.tanca = New System.Windows.Forms.PictureBox()
         Me.minimitzar = New System.Windows.Forms.PictureBox()
-        Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
         Me.barraSuperiorMoure = New System.Windows.Forms.PictureBox()
         Me.barraSuperiorPartBotons = New System.Windows.Forms.PictureBox()
+        Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tanca
@@ -61,18 +62,6 @@ Partial Class MenuPrinEmpleat
         Me.minimitzar.TabIndex = 1
         Me.minimitzar.TabStop = False
         '
-        'adaptarFinestra
-        '
-        Me.adaptarFinestra.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.adaptarFinestra.Image = CType(resources.GetObject("adaptarFinestra.Image"), System.Drawing.Image)
-        Me.adaptarFinestra.Location = New System.Drawing.Point(878, 476)
-        Me.adaptarFinestra.Margin = New System.Windows.Forms.Padding(2)
-        Me.adaptarFinestra.Name = "adaptarFinestra"
-        Me.adaptarFinestra.Size = New System.Drawing.Size(19, 20)
-        Me.adaptarFinestra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.adaptarFinestra.TabIndex = 2
-        Me.adaptarFinestra.TabStop = False
-        '
         'barraSuperiorMoure
         '
         Me.barraSuperiorMoure.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -96,12 +85,34 @@ Partial Class MenuPrinEmpleat
         Me.barraSuperiorPartBotons.TabIndex = 4
         Me.barraSuperiorPartBotons.TabStop = False
         '
-        'Login
+        'adaptarFinestra
+        '
+        Me.adaptarFinestra.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.adaptarFinestra.Image = CType(resources.GetObject("adaptarFinestra.Image"), System.Drawing.Image)
+        Me.adaptarFinestra.Location = New System.Drawing.Point(878, 476)
+        Me.adaptarFinestra.Margin = New System.Windows.Forms.Padding(2)
+        Me.adaptarFinestra.Name = "adaptarFinestra"
+        Me.adaptarFinestra.Size = New System.Drawing.Size(19, 20)
+        Me.adaptarFinestra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.adaptarFinestra.TabIndex = 2
+        Me.adaptarFinestra.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(388, 224)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'MenuPrinEmpleat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(900, 500)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.barraSuperiorPartBotons)
         Me.Controls.Add(Me.barraSuperiorMoure)
         Me.Controls.Add(Me.adaptarFinestra)
@@ -109,20 +120,21 @@ Partial Class MenuPrinEmpleat
         Me.Controls.Add(Me.tanca)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.Name = "Login"
+        Me.Name = "MenuPrinEmpleat"
         Me.Text = "Login"
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents tanca As PictureBox
     Friend WithEvents minimitzar As PictureBox
-    Friend WithEvents adaptarFinestra As PictureBox
     Friend WithEvents barraSuperiorMoure As PictureBox
     Friend WithEvents barraSuperiorPartBotons As PictureBox
+    Friend WithEvents adaptarFinestra As PictureBox
+    Friend WithEvents Button1 As Button
 End Class
