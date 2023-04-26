@@ -28,13 +28,12 @@ Partial Class MenuPrinEmpleat
         Me.barraSuperiorMoure = New System.Windows.Forms.PictureBox()
         Me.barraSuperiorPartBotons = New System.Windows.Forms.PictureBox()
         Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
-        Me.fondoLoginCentre = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.fondoLoginCentre, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tanca
@@ -98,18 +97,19 @@ Partial Class MenuPrinEmpleat
         Me.adaptarFinestra.TabIndex = 2
         Me.adaptarFinestra.TabStop = False
         '
-        'fondoLoginCentre
+        'Button1
         '
-        Me.fondoLoginCentre.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.fondoLoginCentre.BackColor = System.Drawing.Color.Gray
-        Me.fondoLoginCentre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.fondoLoginCentre.Location = New System.Drawing.Point(235, 109)
-        Me.fondoLoginCentre.Name = "fondoLoginCentre"
-        Me.fondoLoginCentre.Size = New System.Drawing.Size(450, 250)
-        Me.fondoLoginCentre.TabIndex = 5
-        Me.fondoLoginCentre.TabStop = False
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Cross
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(352, 350)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(146, 32)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "Login"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'MenuPrinEmpleat
         '
@@ -117,7 +117,7 @@ Partial Class MenuPrinEmpleat
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(900, 500)
-        Me.Controls.Add(Me.fondoLoginCentre)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.barraSuperiorPartBotons)
         Me.Controls.Add(Me.barraSuperiorMoure)
         Me.Controls.Add(Me.adaptarFinestra)
@@ -132,7 +132,6 @@ Partial Class MenuPrinEmpleat
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.fondoLoginCentre, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -142,5 +141,5 @@ Partial Class MenuPrinEmpleat
     Friend WithEvents barraSuperiorMoure As PictureBox
     Friend WithEvents barraSuperiorPartBotons As PictureBox
     Friend WithEvents adaptarFinestra As PictureBox
-    Friend WithEvents fondoLoginCentre As PictureBox
+    Friend WithEvents Button1 As Button
 End Class
