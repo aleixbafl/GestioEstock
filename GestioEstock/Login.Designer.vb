@@ -28,14 +28,12 @@ Partial Class MenuPrinEmpleat
         Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
         Me.minimitzar = New System.Windows.Forms.PictureBox()
         Me.tanca = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'barraSuperiorPartBotons
@@ -99,18 +97,6 @@ Partial Class MenuPrinEmpleat
         Me.tanca.TabIndex = 0
         Me.tanca.TabStop = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Image = Global.GestioEstock.My.Resources.Resources.Logo_PcComponentes1
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(42, 43)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
-        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -132,13 +118,13 @@ Partial Class MenuPrinEmpleat
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(900, 500)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.barraSuperiorPartBotons)
         Me.Controls.Add(Me.barraSuperiorMoure)
         Me.Controls.Add(Me.adaptarFinestra)
         Me.Controls.Add(Me.minimitzar)
         Me.Controls.Add(Me.tanca)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "MenuPrinEmpleat"
         Me.Text = "Login"
@@ -147,7 +133,6 @@ Partial Class MenuPrinEmpleat
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -157,6 +142,5 @@ Partial Class MenuPrinEmpleat
     Friend WithEvents barraSuperiorMoure As PictureBox
     Friend WithEvents barraSuperiorPartBotons As PictureBox
     Friend WithEvents adaptarFinestra As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button1 As Button
 End Class
