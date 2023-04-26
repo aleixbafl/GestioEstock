@@ -23,3 +23,8 @@ D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\De
 D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.exe
 D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.xml
 D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.pdb
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\GestioEstock.exe.config
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\GestioEstock.exe
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\GestioEstock.pdb
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\GestioEstock.xml
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Login.resources
