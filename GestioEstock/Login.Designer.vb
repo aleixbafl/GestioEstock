@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class MenuPrinEmpleat
+Partial Class Login
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,7 +22,7 @@ Partial Class MenuPrinEmpleat
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuPrinEmpleat))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.barraSuperiorPartBotons = New System.Windows.Forms.PictureBox()
@@ -45,7 +45,7 @@ Partial Class MenuPrinEmpleat
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Cross
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(352, 350)
+        Me.Button1.Location = New System.Drawing.Point(355, 328)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(146, 32)
         Me.Button1.TabIndex = 5
@@ -125,14 +125,14 @@ Partial Class MenuPrinEmpleat
         Me.tanca.TabIndex = 0
         Me.tanca.TabStop = False
         '
-        'MenuPrinEmpleat
+        'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(900, 500)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.barraSuperiorPartBotons)
         Me.Controls.Add(Me.barraSuperiorMoure)
         Me.Controls.Add(Me.adaptarFinestra)
@@ -140,7 +140,7 @@ Partial Class MenuPrinEmpleat
         Me.Controls.Add(Me.tanca)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.Name = "MenuPrinEmpleat"
+        Me.Name = "Login"
         Me.Text = "Login"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).EndInit()
