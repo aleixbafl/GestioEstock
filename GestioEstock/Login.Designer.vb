@@ -78,7 +78,7 @@ Partial Class MenuPrinEmpleat
         Me.minimitzar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.minimitzar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.minimitzar.Image = CType(resources.GetObject("minimitzar.Image"), System.Drawing.Image)
-        Me.minimitzar.Location = New System.Drawing.Point(842, 8)
+        Me.minimitzar.Location = New System.Drawing.Point(845, 8)
         Me.minimitzar.Margin = New System.Windows.Forms.Padding(2)
         Me.minimitzar.Name = "minimitzar"
         Me.minimitzar.Size = New System.Drawing.Size(19, 20)
@@ -91,7 +91,7 @@ Partial Class MenuPrinEmpleat
         Me.tanca.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.tanca.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.tanca.Image = CType(resources.GetObject("tanca.Image"), System.Drawing.Image)
-        Me.tanca.Location = New System.Drawing.Point(872, 8)
+        Me.tanca.Location = New System.Drawing.Point(875, 8)
         Me.tanca.Margin = New System.Windows.Forms.Padding(2)
         Me.tanca.Name = "tanca"
         Me.tanca.Size = New System.Drawing.Size(19, 20)

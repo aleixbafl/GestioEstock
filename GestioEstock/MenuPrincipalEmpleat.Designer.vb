@@ -39,10 +39,10 @@ Partial Class MenuPrincipalEmpleat
         '
         Me.barraSuperiorPartBotons.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.barraSuperiorPartBotons.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.barraSuperiorPartBotons.Location = New System.Drawing.Point(836, 2)
+        Me.barraSuperiorPartBotons.Location = New System.Drawing.Point(836, 0)
         Me.barraSuperiorPartBotons.Margin = New System.Windows.Forms.Padding(2)
         Me.barraSuperiorPartBotons.Name = "barraSuperiorPartBotons"
-        Me.barraSuperiorPartBotons.Size = New System.Drawing.Size(64, 32)
+        Me.barraSuperiorPartBotons.Size = New System.Drawing.Size(64, 43)
         Me.barraSuperiorPartBotons.TabIndex = 9
         Me.barraSuperiorPartBotons.TabStop = False
         '
@@ -51,10 +51,10 @@ Partial Class MenuPrincipalEmpleat
         Me.barraSuperiorMoure.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.barraSuperiorMoure.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.barraSuperiorMoure.Location = New System.Drawing.Point(0, 2)
+        Me.barraSuperiorMoure.Location = New System.Drawing.Point(0, 0)
         Me.barraSuperiorMoure.Margin = New System.Windows.Forms.Padding(2)
         Me.barraSuperiorMoure.Name = "barraSuperiorMoure"
-        Me.barraSuperiorMoure.Size = New System.Drawing.Size(837, 32)
+        Me.barraSuperiorMoure.Size = New System.Drawing.Size(837, 43)
         Me.barraSuperiorMoure.TabIndex = 8
         Me.barraSuperiorMoure.TabStop = False
         '
@@ -75,7 +75,7 @@ Partial Class MenuPrincipalEmpleat
         Me.minimitzar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.minimitzar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.minimitzar.Image = CType(resources.GetObject("minimitzar.Image"), System.Drawing.Image)
-        Me.minimitzar.Location = New System.Drawing.Point(842, 10)
+        Me.minimitzar.Location = New System.Drawing.Point(845, 8)
         Me.minimitzar.Margin = New System.Windows.Forms.Padding(2)
         Me.minimitzar.Name = "minimitzar"
         Me.minimitzar.Size = New System.Drawing.Size(19, 20)
@@ -88,7 +88,7 @@ Partial Class MenuPrincipalEmpleat
         Me.tanca.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.tanca.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.tanca.Image = CType(resources.GetObject("tanca.Image"), System.Drawing.Image)
-        Me.tanca.Location = New System.Drawing.Point(872, 10)
+        Me.tanca.Location = New System.Drawing.Point(875, 8)
         Me.tanca.Margin = New System.Windows.Forms.Padding(2)
         Me.tanca.Name = "tanca"
         Me.tanca.Size = New System.Drawing.Size(19, 20)
