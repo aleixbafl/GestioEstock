@@ -29,6 +29,10 @@ Partial Class MenuPrinEmpleat
         Me.minimitzar = New System.Windows.Forms.PictureBox()
         Me.tanca = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -99,6 +103,7 @@ Partial Class MenuPrinEmpleat
         '
         'Button1
         '
+        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Cross
@@ -111,12 +116,59 @@ Partial Class MenuPrinEmpleat
         Me.Button1.Text = "Login"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(193, 201)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(126, 28)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "    Usuari    "
+        '
+        'Label2
+        '
+        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label2.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(193, 262)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(128, 28)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "Contrasenya"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox2.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(352, 201)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(190, 29)
+        Me.TextBox2.TabIndex = 9
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.TextBox1.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(352, 261)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBox1.Size = New System.Drawing.Size(190, 29)
+        Me.TextBox1.TabIndex = 10
+        '
         'MenuPrinEmpleat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(900, 500)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.barraSuperiorPartBotons)
         Me.Controls.Add(Me.barraSuperiorMoure)
@@ -134,6 +186,7 @@ Partial Class MenuPrinEmpleat
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -143,4 +196,8 @@ Partial Class MenuPrinEmpleat
     Friend WithEvents barraSuperiorPartBotons As PictureBox
     Friend WithEvents adaptarFinestra As PictureBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox1 As TextBox
 End Class
