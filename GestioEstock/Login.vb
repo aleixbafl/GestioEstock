@@ -65,6 +65,9 @@
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
+        Dim conexionBD As New ConexioBD()
+        Dim tabla As DataTable = conexionBD.EjecutarConsulta("SELECT ID_Categoria, categoria FROM categories")
+        Taula.DataSource = tabla
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
