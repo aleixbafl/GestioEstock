@@ -88,7 +88,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConexioBD.vb" />
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>

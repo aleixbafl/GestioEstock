@@ -15,7 +15,6 @@ D:\estudis\git_hub_descktop\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Men
 D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.vbproj.AssemblyReference.cache
 D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.vbproj.SuggestedBindingRedirects.cache
 D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.MenuPrinEmpleat.resources
-D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.MenuPrincipalEmpleat.resources
 D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Resources.resources
 D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.vbproj.GenerateResource.cache
 D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.vbproj.CoreCompileInputs.cache
