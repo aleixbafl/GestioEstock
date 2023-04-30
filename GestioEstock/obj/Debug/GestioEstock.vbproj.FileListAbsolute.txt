@@ -26,3 +26,6 @@ D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\De
 D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\GestioEstock.xml
 D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.MenuPrincipal.resources
 D:\estudis\git_hub_descktop\GestioEstock\GestioEstock\obj\Debug\GestioEstock.MenuPrincipal.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Menu_Productes.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Menu_Categories.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Menu_Usuaris.resources

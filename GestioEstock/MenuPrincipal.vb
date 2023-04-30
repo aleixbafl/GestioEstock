@@ -65,4 +65,23 @@
     Private Sub Button3_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        tanca.BringToFront()
+        minimitzar.BringToFront()
+    End Sub
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Hide()
+        Menu_Productes.Show()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        Menu_Categories.Show()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Menu_Usuaris.Show()
+        Me.Hide()
+    End Sub
 End Class

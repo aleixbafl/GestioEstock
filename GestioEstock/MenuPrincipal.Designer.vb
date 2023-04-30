@@ -23,21 +23,79 @@ Partial Class MenuPrincipal
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuPrincipal))
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.barraSuperiorPartBotons = New System.Windows.Forms.PictureBox()
         Me.barraSuperiorMoure = New System.Windows.Forms.PictureBox()
         Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
         Me.minimitzar = New System.Windows.Forms.PictureBox()
         Me.tanca = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Button1
+        '
+        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Cross
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(181, 203)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(168, 32)
+        Me.Button1.TabIndex = 13
+        Me.Button1.Text = "Taula Productes"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Cross
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button2.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(529, 203)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(168, 32)
+        Me.Button2.TabIndex = 14
+        Me.Button2.Text = "Taula Categories"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button4.Cursor = System.Windows.Forms.Cursors.Cross
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button4.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(355, 329)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(168, 32)
+        Me.Button4.TabIndex = 18
+        Me.Button4.Text = "Taula Usuaris"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(243, 81)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(400, 28)
+        Me.Label1.TabIndex = 19
+        Me.Label1.Text = "Quina Taula Es La Que Vols Modificar ?"
         '
         'barraSuperiorPartBotons
         '
@@ -99,64 +157,6 @@ Partial Class MenuPrincipal
         Me.tanca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.tanca.TabIndex = 5
         Me.tanca.TabStop = False
-        '
-        'Button1
-        '
-        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Cross
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(181, 203)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(168, 32)
-        Me.Button1.TabIndex = 13
-        Me.Button1.Text = "Taula Productes"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Cross
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(529, 203)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(168, 32)
-        Me.Button2.TabIndex = 14
-        Me.Button2.Text = "Taula Categories"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.Cursor = System.Windows.Forms.Cursors.Cross
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(355, 329)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(168, 32)
-        Me.Button4.TabIndex = 18
-        Me.Button4.Text = "Taula Usuaris"
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(243, 81)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(400, 28)
-        Me.Label1.TabIndex = 19
-        Me.Label1.Text = "Quina Taula Es La Que Vols Modificar ?"
         '
         'MenuPrincipal
         '
