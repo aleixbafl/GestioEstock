@@ -33,11 +33,13 @@ Partial Class MenuPrinEmpleat
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Taula = New System.Windows.Forms.DataGridView()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Taula, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'barraSuperiorPartBotons
@@ -110,7 +112,7 @@ Partial Class MenuPrinEmpleat
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(469, 431)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(195, 39)
         Me.Button1.TabIndex = 5
@@ -148,7 +150,7 @@ Partial Class MenuPrinEmpleat
         Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBox2.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(469, 247)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(252, 34)
         Me.TextBox2.TabIndex = 9
@@ -158,11 +160,21 @@ Partial Class MenuPrinEmpleat
         Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBox1.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(469, 321)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox1.Size = New System.Drawing.Size(252, 34)
         Me.TextBox1.TabIndex = 10
+        '
+        'Taula
+        '
+        Me.Taula.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Taula.Location = New System.Drawing.Point(846, 307)
+        Me.Taula.Name = "Taula"
+        Me.Taula.RowHeadersWidth = 51
+        Me.Taula.RowTemplate.Height = 24
+        Me.Taula.Size = New System.Drawing.Size(240, 150)
+        Me.Taula.TabIndex = 11
         '
         'MenuPrinEmpleat
         '
@@ -170,6 +182,7 @@ Partial Class MenuPrinEmpleat
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1200, 615)
+        Me.Controls.Add(Me.Taula)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label2)
@@ -190,6 +203,7 @@ Partial Class MenuPrinEmpleat
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Taula, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -205,4 +219,5 @@ Partial Class MenuPrinEmpleat
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Taula As DataGridView
 End Class
