@@ -33,23 +33,21 @@ Partial Class MenuPrinEmpleat
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Taula = New System.Windows.Forms.DataGridView()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Taula, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'barraSuperiorPartBotons
         '
         Me.barraSuperiorPartBotons.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.barraSuperiorPartBotons.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.barraSuperiorPartBotons.Location = New System.Drawing.Point(1115, 0)
-        Me.barraSuperiorPartBotons.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.barraSuperiorPartBotons.Location = New System.Drawing.Point(836, 0)
+        Me.barraSuperiorPartBotons.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.barraSuperiorPartBotons.Name = "barraSuperiorPartBotons"
-        Me.barraSuperiorPartBotons.Size = New System.Drawing.Size(85, 53)
+        Me.barraSuperiorPartBotons.Size = New System.Drawing.Size(64, 43)
         Me.barraSuperiorPartBotons.TabIndex = 4
         Me.barraSuperiorPartBotons.TabStop = False
         '
@@ -59,9 +57,9 @@ Partial Class MenuPrinEmpleat
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.barraSuperiorMoure.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.barraSuperiorMoure.Location = New System.Drawing.Point(0, 0)
-        Me.barraSuperiorMoure.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.barraSuperiorMoure.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.barraSuperiorMoure.Name = "barraSuperiorMoure"
-        Me.barraSuperiorMoure.Size = New System.Drawing.Size(1116, 53)
+        Me.barraSuperiorMoure.Size = New System.Drawing.Size(837, 43)
         Me.barraSuperiorMoure.TabIndex = 3
         Me.barraSuperiorMoure.TabStop = False
         '
@@ -69,10 +67,10 @@ Partial Class MenuPrinEmpleat
         '
         Me.adaptarFinestra.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.adaptarFinestra.Image = CType(resources.GetObject("adaptarFinestra.Image"), System.Drawing.Image)
-        Me.adaptarFinestra.Location = New System.Drawing.Point(1171, 586)
-        Me.adaptarFinestra.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.adaptarFinestra.Location = New System.Drawing.Point(878, 476)
+        Me.adaptarFinestra.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.adaptarFinestra.Name = "adaptarFinestra"
-        Me.adaptarFinestra.Size = New System.Drawing.Size(25, 25)
+        Me.adaptarFinestra.Size = New System.Drawing.Size(19, 20)
         Me.adaptarFinestra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.adaptarFinestra.TabIndex = 2
         Me.adaptarFinestra.TabStop = False
@@ -82,10 +80,10 @@ Partial Class MenuPrinEmpleat
         Me.minimitzar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.minimitzar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.minimitzar.Image = CType(resources.GetObject("minimitzar.Image"), System.Drawing.Image)
-        Me.minimitzar.Location = New System.Drawing.Point(1127, 10)
-        Me.minimitzar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.minimitzar.Location = New System.Drawing.Point(845, 8)
+        Me.minimitzar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.minimitzar.Name = "minimitzar"
-        Me.minimitzar.Size = New System.Drawing.Size(25, 25)
+        Me.minimitzar.Size = New System.Drawing.Size(19, 20)
         Me.minimitzar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.minimitzar.TabIndex = 1
         Me.minimitzar.TabStop = False
@@ -95,10 +93,10 @@ Partial Class MenuPrinEmpleat
         Me.tanca.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.tanca.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.tanca.Image = CType(resources.GetObject("tanca.Image"), System.Drawing.Image)
-        Me.tanca.Location = New System.Drawing.Point(1167, 10)
-        Me.tanca.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tanca.Location = New System.Drawing.Point(875, 8)
+        Me.tanca.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.tanca.Name = "tanca"
-        Me.tanca.Size = New System.Drawing.Size(25, 25)
+        Me.tanca.Size = New System.Drawing.Size(19, 20)
         Me.tanca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.tanca.TabIndex = 0
         Me.tanca.TabStop = False
@@ -111,10 +109,9 @@ Partial Class MenuPrinEmpleat
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Cross
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(469, 431)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(352, 350)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(195, 39)
+        Me.Button1.Size = New System.Drawing.Size(146, 32)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "Login"
         Me.Button1.UseVisualStyleBackColor = False
@@ -125,10 +122,9 @@ Partial Class MenuPrinEmpleat
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(257, 247)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(193, 201)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(162, 37)
+        Me.Label1.Size = New System.Drawing.Size(126, 28)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "    Usuari    "
         '
@@ -138,10 +134,9 @@ Partial Class MenuPrinEmpleat
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label2.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(257, 322)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(193, 262)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(161, 37)
+        Me.Label2.Size = New System.Drawing.Size(128, 28)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Contrasenya"
         '
@@ -149,40 +144,27 @@ Partial Class MenuPrinEmpleat
         '
         Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBox2.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(469, 247)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox2.Location = New System.Drawing.Point(352, 201)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(252, 34)
+        Me.TextBox2.Size = New System.Drawing.Size(190, 29)
         Me.TextBox2.TabIndex = 9
         '
         'TextBox1
         '
         Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBox1.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(469, 321)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox1.Location = New System.Drawing.Point(352, 261)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox1.Size = New System.Drawing.Size(252, 34)
+        Me.TextBox1.Size = New System.Drawing.Size(190, 29)
         Me.TextBox1.TabIndex = 10
-        '
-        'Taula
-        '
-        Me.Taula.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Taula.Location = New System.Drawing.Point(846, 307)
-        Me.Taula.Name = "Taula"
-        Me.Taula.RowHeadersWidth = 51
-        Me.Taula.RowTemplate.Height = 24
-        Me.Taula.Size = New System.Drawing.Size(240, 150)
-        Me.Taula.TabIndex = 11
         '
         'MenuPrinEmpleat
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1200, 615)
-        Me.Controls.Add(Me.Taula)
+        Me.ClientSize = New System.Drawing.Size(900, 500)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label2)
@@ -195,7 +177,7 @@ Partial Class MenuPrinEmpleat
         Me.Controls.Add(Me.tanca)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "MenuPrinEmpleat"
         Me.Text = "Login"
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).EndInit()
@@ -203,7 +185,6 @@ Partial Class MenuPrinEmpleat
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Taula, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -219,5 +200,4 @@ Partial Class MenuPrinEmpleat
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Taula As DataGridView
 End Class
