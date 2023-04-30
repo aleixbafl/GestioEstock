@@ -1,4 +1,4 @@
-﻿Public Class MenuPrincipalEmpleat
+﻿Public Class MenuPrincipal
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -60,5 +60,9 @@
         Me.ResumeLayout()
 
         minimitzar.BringToFront()
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
     End Sub
 End Class
