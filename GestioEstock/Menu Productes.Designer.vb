@@ -36,6 +36,7 @@ Partial Class Menu_Productes
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -216,12 +217,26 @@ Partial Class Menu_Productes
         Me.Button4.Text = "Entrar"
         Me.Button4.UseVisualStyleBackColor = False
         '
+        'Label5
+        '
+        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(329, 91)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(151, 28)
+        Me.Label5.TabIndex = 18
+        Me.Label5.Text = "Que Vols Fer ?"
+        '
         'Menu_Productes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(900, 500)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -261,4 +276,5 @@ Partial Class Menu_Productes
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents Label5 As Label
 End Class
