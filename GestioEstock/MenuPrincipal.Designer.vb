@@ -158,8 +158,6 @@ Partial Class MenuPrincipal
         Me.tanca.TabIndex = 5
         Me.tanca.TabStop = False
         '
-<<<<<<< Updated upstream
-=======
         'Button1
         '
         Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -222,7 +220,7 @@ Partial Class MenuPrincipal
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Quina Taula Es La Que Vols Modificar ?"
         '
->>>>>>> Stashed changes
+        '>>>>>>> Stashed changes
         'MenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)

@@ -1,4 +1,7 @@
-﻿Public Class MenuPrinEmpleat
+﻿Imports MySql.Data.MySqlClient
+Imports MySqlConnector
+
+Public Class MenuPrinEmpleat
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -65,7 +68,14 @@
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
-
+        Dim connStr As String = "server=sql965.main-hosting.eu;user=u346867692_gestiorEstoc;password=Fat/3232;database=u346867692_gestiorEstoc;port=3306;"
+        Dim conn As New MySqlConnection(connStr)
+        Try
+            conn.Open()
+            MessageBox.Show("Conexión exitosa")
+        Catch ex As Exception
+            MessageBox.Show("Error de conexión: " & ex.Message)
+        End Try
     End Sub
 
 
@@ -73,5 +83,6 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         MenuPrincipal.Show()
+
     End Sub
 End Class
