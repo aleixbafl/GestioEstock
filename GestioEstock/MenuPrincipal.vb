@@ -70,6 +70,7 @@
         tanca.BringToFront()
         minimitzar.BringToFront()
     End Sub
+<<<<<<< Updated upstream
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         Menu_Productes.Show()
@@ -84,4 +85,6 @@
         Menu_Usuaris.Show()
         Me.Hide()
     End Sub
+=======
+>>>>>>> Stashed changes
 End Class
