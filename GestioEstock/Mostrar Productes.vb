@@ -68,10 +68,6 @@ Public Class Mostrar_Productes
     Private Sub Menu_Usuaris_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
-        Dim conn As New ConexioBD()
-        conn.ObrirConexio()
-        taula.DataSource = conn.EjecutarConsulta("SELECT * FROM productes")
-        conn.CerrarConexion()
     End Sub
     Private Sub Mostrar_Productes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
