@@ -1,4 +1,6 @@
-﻿Public Class Actualitzar_Productes
+﻿Imports MySqlConnector
+
+Public Class Actualitzar_Productes
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -65,9 +67,50 @@
     Private Sub Menu_Usuaris_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
+        LoadDataGrid()
     End Sub
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Menu_Productes.Show()
         Me.Close()
+    End Sub
+
+    Private Sub LoadDataGrid()
+        Dim conn As New ConexioBD()
+        conn.ObrirConexio()
+        tabla.DataSource = conn.EjecutarConsulta("SELECT * FROM productes")
+        conn.CerrarConexion()
+    End Sub
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim conn As New ConexioBD()
+        Dim command As MySqlCommand = New MySqlCommand()
+        command.CommandText = "UPDATE productes SET ID_Categoria = @ID_Categoria, preu = @preu, stock = @stock, marca = @marca, model = @model, especificacions = @especificacions, imatge = @imatge, actiu = @actiu WHERE ID_Producte = @ID_Producte"
+        command.Parameters.AddWithValue("@ID_Categoria", "")
+        command.Parameters.AddWithValue("@preu", "")
+        command.Parameters.AddWithValue("@stock", "")
+        command.Parameters.AddWithValue("@marca", "")
+        command.Parameters.AddWithValue("@model", "")
+        command.Parameters.AddWithValue("@especificacions", "")
+        command.Parameters.AddWithValue("@imatge", "")
+        command.Parameters.AddWithValue("@actiu", "")
+        command.Parameters.AddWithValue("@ID_Producte", "")
+
+        For Each row As DataGridViewRow In tabla.Rows
+            If Not row.IsNewRow Then
+                command.Parameters("@ID_Categoria").Value = row.Cells("ID_Categoria").Value.ToString()
+                command.Parameters("@preu").Value = row.Cells("preu").Value.ToString()
+                command.Parameters("@stock").Value = row.Cells("stock").Value.ToString()
+                command.Parameters("@marca").Value = row.Cells("marca").Value.ToString()
+                command.Parameters("@model").Value = row.Cells("model").Value.ToString()
+                command.Parameters("@especificacions").Value = row.Cells("especificacions").Value.ToString()
+                command.Parameters("@imatge").Value = row.Cells("imatge").Value.ToString()
+                command.Parameters("@actiu").Value = row.Cells("actiu").Value.ToString()
+                command.Parameters("@ID_Producte").Value = row.Cells("ID_Producte").Value.ToString()
+                conn.ObrirConexio()
+                command.ExecuteNonQuery()
+                conn.CerrarConexion()
+            End If
+        Next
+
+        LoadDataGrid()
     End Sub
 End Class

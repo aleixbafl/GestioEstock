@@ -33,13 +33,13 @@ Partial Class Actualitzar_Productes
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.tabla = New System.Windows.Forms.DataGridView()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.tabla, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'barraSuperiorPartBotons
@@ -172,13 +172,13 @@ Partial Class Actualitzar_Productes
         Me.Label3.TabIndex = 21
         Me.Label3.Text = "Actualitzar Productes"
         '
-        'DataGridView1
+        'tabla
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(27, 256)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(848, 198)
-        Me.DataGridView1.TabIndex = 54
+        Me.tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.tabla.Location = New System.Drawing.Point(27, 256)
+        Me.tabla.Name = "tabla"
+        Me.tabla.Size = New System.Drawing.Size(848, 198)
+        Me.tabla.TabIndex = 54
         '
         'Actualitzar_Productes
         '
@@ -186,7 +186,7 @@ Partial Class Actualitzar_Productes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(900, 500)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.tabla)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label5)
@@ -205,7 +205,7 @@ Partial Class Actualitzar_Productes
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.tabla, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -221,5 +221,5 @@ Partial Class Actualitzar_Productes
     Friend WithEvents Label5 As Label
     Friend WithEvents Button3 As Button
     Friend WithEvents Label3 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents tabla As DataGridView
 End Class
