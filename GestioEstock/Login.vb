@@ -79,15 +79,6 @@ Public Class MenuPrinEmpleat
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Usuari = insertUsuari.Text
         Dim contrasenya As String = insertContrasenya.Text
-        If Not String.IsNullOrEmpty(insertUsuari.Text) AndAlso Not String.IsNullOrEmpty(insertContrasenya.Text) Then
-            Dim conn As New ConexioBD()
-            conn.ObrirConexio()
-
-            Dim tipusUsuari As String = conn.ComprovarUsuari(nomUsuari, contrasenya)
-
-        Else
-
-        End If
     End Sub
 
 End Class
