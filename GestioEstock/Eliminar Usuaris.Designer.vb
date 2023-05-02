@@ -27,8 +27,6 @@ Partial Class Eliminar_Usuaris
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.barraSuperiorPartBotons = New System.Windows.Forms.PictureBox()
         Me.barraSuperiorMoure = New System.Windows.Forms.PictureBox()
         Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
@@ -45,9 +43,9 @@ Partial Class Eliminar_Usuaris
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(23, 244)
+        Me.DataGridView1.Location = New System.Drawing.Point(23, 176)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(852, 219)
+        Me.DataGridView1.Size = New System.Drawing.Size(852, 287)
         Me.DataGridView1.TabIndex = 106
         '
         'Label6
@@ -57,7 +55,7 @@ Partial Class Eliminar_Usuaris
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(183, 189)
+        Me.Label6.Location = New System.Drawing.Point(205, 115)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(143, 28)
         Me.Label6.TabIndex = 105
@@ -71,7 +69,7 @@ Partial Class Eliminar_Usuaris
         Me.Button5.Cursor = System.Windows.Forms.Cursors.Cross
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button5.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(449, 185)
+        Me.Button5.Location = New System.Drawing.Point(471, 111)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(146, 32)
         Me.Button5.TabIndex = 104
@@ -90,34 +88,6 @@ Partial Class Eliminar_Usuaris
         Me.Label5.Size = New System.Drawing.Size(151, 28)
         Me.Label5.TabIndex = 103
         Me.Label5.Text = "Que Vols Fer ?"
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(183, 128)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(177, 28)
-        Me.Label1.TabIndex = 102
-        Me.Label1.Text = "Eliminar Usuaris"
-        '
-        'Button1
-        '
-        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Cross
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(449, 128)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(146, 32)
-        Me.Button1.TabIndex = 101
-        Me.Button1.Text = "Entrar"
-        Me.Button1.UseVisualStyleBackColor = False
         '
         'barraSuperiorPartBotons
         '
@@ -190,8 +160,6 @@ Partial Class Eliminar_Usuaris
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.barraSuperiorPartBotons)
         Me.Controls.Add(Me.barraSuperiorMoure)
         Me.Controls.Add(Me.adaptarFinestra)
@@ -215,8 +183,6 @@ Partial Class Eliminar_Usuaris
     Friend WithEvents Label6 As Label
     Friend WithEvents Button5 As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
     Friend WithEvents barraSuperiorPartBotons As PictureBox
     Friend WithEvents barraSuperiorMoure As PictureBox
     Friend WithEvents adaptarFinestra As PictureBox

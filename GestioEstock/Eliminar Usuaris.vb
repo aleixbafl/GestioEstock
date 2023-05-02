@@ -1,4 +1,6 @@
-﻿Public Class Eliminar_Usuaris
+﻿Imports MySqlConnector
+
+Public Class Eliminar_Usuaris
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -65,7 +67,33 @@
     Private Sub Menu_Usuaris_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
+        DataGridView1.DataSource = GetData()
     End Sub
+    Private Sub DataGridView1_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridView1.CellMouseClick
+        'Verifica que se ha hecho clic en una celda con el botón derecho del ratón
+        If e.Button = MouseButtons.Right Then
+            Dim isbn As String = DataGridView1.Rows(e.RowIndex).Cells("ID_Usuari").Value.ToString()
+            If MessageBox.Show("¿Estás seguro de que deseas eliminar este Registro?", "Eliminar Registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+                Dim connString As String = "Server=sql965.main-hosting.eu;Database=u346867692_gestiorEstoc;Uid=u346867692_gestiorEstoc;Pwd=Fat/3232;AllowZeroDateTime=True;"
+                Dim query As String = "DELETE FROM usuari WHERE ID_Usuari = @ID_Usuari;"
+                Using conn As New MySqlConnection(connString), cmd As New MySqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@ID_Usuari", isbn)
+                    conn.Open()
+                    cmd.ExecuteNonQuery()
+                End Using
+                DataGridView1.DataSource = GetData()
+            End If
+        End If
+    End Sub
+    Private Function GetData() As DataTable
+        Dim connString As String = "Server=sql965.main-hosting.eu;Database=u346867692_gestiorEstoc;Uid=u346867692_gestiorEstoc;Pwd=Fat/3232;AllowZeroDateTime=True;"
+        Dim query As String = "SELECT * FROM usuari;"
+        Using conn As New MySqlConnection(connString), da As New MySqlDataAdapter(query, conn)
+            Dim table As New DataTable()
+            da.Fill(table)
+            Return table
+        End Using
+    End Function
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Menu_Usuaris.Show()

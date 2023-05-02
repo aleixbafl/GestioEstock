@@ -26,8 +26,6 @@ Partial Class Eliminar_Productes
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.barraSuperiorPartBotons = New System.Windows.Forms.PictureBox()
         Me.barraSuperiorMoure = New System.Windows.Forms.PictureBox()
         Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
@@ -49,7 +47,7 @@ Partial Class Eliminar_Productes
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(191, 186)
+        Me.Label6.Location = New System.Drawing.Point(203, 135)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(143, 28)
         Me.Label6.TabIndex = 30
@@ -63,7 +61,7 @@ Partial Class Eliminar_Productes
         Me.Button5.Cursor = System.Windows.Forms.Cursors.Cross
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button5.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(457, 182)
+        Me.Button5.Location = New System.Drawing.Point(469, 131)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(146, 32)
         Me.Button5.TabIndex = 29
@@ -82,34 +80,6 @@ Partial Class Eliminar_Productes
         Me.Label5.Size = New System.Drawing.Size(151, 28)
         Me.Label5.TabIndex = 28
         Me.Label5.Text = "Que Vols Fer ?"
-        '
-        'Button4
-        '
-        Me.Button4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.Cursor = System.Windows.Forms.Cursors.Cross
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(457, 120)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(146, 32)
-        Me.Button4.TabIndex = 27
-        Me.Button4.Text = "Entrar"
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Label4
-        '
-        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(191, 124)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(195, 28)
-        Me.Label4.TabIndex = 26
-        Me.Label4.Text = "Eliminar Productes"
         '
         'barraSuperiorPartBotons
         '
@@ -175,10 +145,10 @@ Partial Class Eliminar_Productes
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(29, 264)
+        Me.DataGridView1.Location = New System.Drawing.Point(39, 187)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(848, 198)
-        Me.DataGridView1.TabIndex = 55
+        Me.DataGridView1.Size = New System.Drawing.Size(798, 266)
+        Me.DataGridView1.TabIndex = 56
         '
         'Eliminar_Productes
         '
@@ -190,8 +160,6 @@ Partial Class Eliminar_Productes
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.barraSuperiorPartBotons)
         Me.Controls.Add(Me.barraSuperiorMoure)
         Me.Controls.Add(Me.adaptarFinestra)
@@ -214,8 +182,6 @@ Partial Class Eliminar_Productes
     Friend WithEvents Label6 As Label
     Friend WithEvents Button5 As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Label4 As Label
     Friend WithEvents barraSuperiorPartBotons As PictureBox
     Friend WithEvents barraSuperiorMoure As PictureBox
     Friend WithEvents adaptarFinestra As PictureBox
