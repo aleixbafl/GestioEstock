@@ -26,8 +26,8 @@ Partial Class MenuPrinEmpleat
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.insertUsuari = New System.Windows.Forms.TextBox()
+        Me.insertContrasenya = New System.Windows.Forms.TextBox()
         Me.barraSuperiorPartBotons = New System.Windows.Forms.PictureBox()
         Me.barraSuperiorMoure = New System.Windows.Forms.PictureBox()
         Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
@@ -50,7 +50,7 @@ Partial Class MenuPrinEmpleat
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(469, 431)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(195, 39)
         Me.Button1.TabIndex = 5
@@ -85,26 +85,26 @@ Partial Class MenuPrinEmpleat
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Contrasenya"
         '
-        'TextBox2
+        'insertUsuari
         '
-        Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox2.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(469, 247)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(252, 34)
-        Me.TextBox2.TabIndex = 9
+        Me.insertUsuari.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.insertUsuari.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.insertUsuari.Location = New System.Drawing.Point(469, 250)
+        Me.insertUsuari.Margin = New System.Windows.Forms.Padding(4)
+        Me.insertUsuari.Name = "insertUsuari"
+        Me.insertUsuari.Size = New System.Drawing.Size(252, 34)
+        Me.insertUsuari.TabIndex = 9
         '
-        'TextBox1
+        'insertContrasenya
         '
-        Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox1.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(469, 321)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox1.Size = New System.Drawing.Size(252, 34)
-        Me.TextBox1.TabIndex = 10
+        Me.insertContrasenya.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.insertContrasenya.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.insertContrasenya.Location = New System.Drawing.Point(469, 335)
+        Me.insertContrasenya.Margin = New System.Windows.Forms.Padding(4)
+        Me.insertContrasenya.Name = "insertContrasenya"
+        Me.insertContrasenya.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.insertContrasenya.Size = New System.Drawing.Size(252, 34)
+        Me.insertContrasenya.TabIndex = 10
         '
         'barraSuperiorPartBotons
         '
@@ -187,8 +187,8 @@ Partial Class MenuPrinEmpleat
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1200, 615)
         Me.Controls.Add(Me.login)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.insertContrasenya)
+        Me.Controls.Add(Me.insertUsuari)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
@@ -220,7 +220,7 @@ Partial Class MenuPrinEmpleat
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents insertUsuari As TextBox
+    Friend WithEvents insertContrasenya As TextBox
     Friend WithEvents login As Label
 End Class

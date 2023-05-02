@@ -141,9 +141,9 @@ Partial Class Menu_Usuaris
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(183, 351)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(177, 28)
+        Me.Label4.Size = New System.Drawing.Size(195, 28)
         Me.Label4.TabIndex = 30
-        Me.Label4.Text = "Eliminar Usuaris"
+        Me.Label4.Text = "Eliminar Productes"
         '
         'Label3
         '
@@ -154,9 +154,9 @@ Partial Class Menu_Usuaris
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(183, 290)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(204, 28)
+        Me.Label3.Size = New System.Drawing.Size(222, 28)
         Me.Label3.TabIndex = 29
-        Me.Label3.Text = "Actualitzar Usuaris"
+        Me.Label3.Text = "Actualitzar Productes"
         '
         'Label2
         '
@@ -167,9 +167,9 @@ Partial Class Menu_Usuaris
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(183, 227)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(169, 28)
+        Me.Label2.Size = New System.Drawing.Size(187, 28)
         Me.Label2.TabIndex = 28
-        Me.Label2.Text = "Insertar Usuaris"
+        Me.Label2.Text = "Insertar Productes"
         '
         'Label1
         '
@@ -180,9 +180,9 @@ Partial Class Menu_Usuaris
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(183, 164)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(170, 28)
+        Me.Label1.Size = New System.Drawing.Size(188, 28)
         Me.Label1.TabIndex = 27
-        Me.Label1.Text = "Mostrar Usuaris"
+        Me.Label1.Text = "Mostrar Productes"
         '
         'Button1
         '
