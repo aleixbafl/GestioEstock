@@ -1,4 +1,4 @@
-﻿Public Class MenuPrincipal
+﻿Public Class Actualitzar_Productes
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -17,22 +17,24 @@
     Private Sub tanca_Click(sender As Object, e As EventArgs) Handles tanca.Click
         Application.Exit()  'Finalitzar el programa
     End Sub
-    Private Sub minimitzar_MouseEnter(sender As Object, e As EventArgs)
-
+    Private Sub minimitzar_MouseEnter(sender As Object, e As EventArgs) Handles minimitzar.MouseEnter
+        cursorPuntero(minimitzar)
     End Sub
 
-    Private Sub minimitzar_MouseLeave(sender As Object, e As EventArgs)
-
+    Private Sub minimitzar_MouseLeave(sender As Object, e As EventArgs) Handles minimitzar.MouseLeave
+        cursorPrincimi(minimitzar)
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles minimitzar.Click
         Me.WindowState = FormWindowState.Minimized  'Minimitzar la finestra
     End Sub
 
     Dim mouse_offset As Point
     'Comprobe si el boto del ratoli es l'esquerra a l'hora de clicar la icona de cambiar el tamany de la finestra
-    Private Sub adaptarFinestra_MouseDown(sender As Object, e As MouseEventArgs)
-
+    Private Sub adaptarFinestra_MouseDown(sender As Object, e As MouseEventArgs) Handles adaptarFinestra.MouseDown
+        If e.Button = MouseButtons.Left Then
+            mouse_offset = New Point(e.Location.X, e.Location.Y)
+        End If
     End Sub
     'Aqui es lo que permet cambiar el tamany de la finestra
     Private Sub adaptarFinestra_MouseMove(sender As Object, e As MouseEventArgs) Handles adaptarFinestra.MouseMove
@@ -56,32 +58,16 @@
         End If
     End Sub
 
-    Private Sub barraSuperiorMoure_MouseUp(sender As Object, e As MouseEventArgs)
+    Private Sub barraSuperiorMoure_MouseUp(sender As Object, e As MouseEventArgs) Handles barraSuperiorMoure.MouseUp
         Me.ResumeLayout()
-
-        minimitzar.BringToFront()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Menu_Usuaris_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
     End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Hide()
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Menu_Productes.Show()
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Menu_Categories.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Menu_Usuaris.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 End Class

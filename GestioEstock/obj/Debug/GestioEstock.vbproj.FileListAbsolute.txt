@@ -62,3 +62,11 @@ D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\De
 D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.vbproj.CopyComplete
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Insert_Productes.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Mostrar_Productes.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Actualitzar_Productes.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Eliminar_Productes.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Actualitzar_Categories.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Eliminar_Categories.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Insertar_Categories.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Mostrar_Categories.resources

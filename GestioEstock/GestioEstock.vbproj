@@ -111,6 +111,42 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actualitzar Productes.Designer.vb">
+      <DependentUpon>Actualitzar Productes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualitzar Productes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualitzar_Categories.Designer.vb">
+      <DependentUpon>Actualitzar_Categories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualitzar_Categories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar Productes.Designer.vb">
+      <DependentUpon>Eliminar Productes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar Productes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar_Categories.Designer.vb">
+      <DependentUpon>Eliminar_Categories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar_Categories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insert Productes.Designer.vb">
+      <DependentUpon>Insert Productes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Insert Productes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertar_Categories.Designer.vb">
+      <DependentUpon>Insertar_Categories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar_Categories.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +178,18 @@
     <Compile Include="MenuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Mostrar Productes.Designer.vb">
+      <DependentUpon>Mostrar Productes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mostrar Productes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mostrar_Categories.Designer.vb">
+      <DependentUpon>Mostrar_Categories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mostrar_Categories.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -160,6 +208,24 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Actualitzar Productes.resx">
+      <DependentUpon>Actualitzar Productes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actualitzar_Categories.resx">
+      <DependentUpon>Actualitzar_Categories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar Productes.resx">
+      <DependentUpon>Eliminar Productes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar_Categories.resx">
+      <DependentUpon>Eliminar_Categories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insert Productes.resx">
+      <DependentUpon>Insert Productes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertar_Categories.resx">
+      <DependentUpon>Insertar_Categories.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +240,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mostrar Productes.resx">
+      <DependentUpon>Mostrar Productes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mostrar_Categories.resx">
+      <DependentUpon>Mostrar_Categories.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
