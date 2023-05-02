@@ -1,6 +1,8 @@
 ﻿Imports MySqlConnector
 
 Public Class Actualitzar_Productes
+    Dim cadena As String = "Server=sql965.main-hosting.eu;Database=u346867692_gestiorEstoc;Uid=u346867692_gestiorEstoc;Pwd=Fat/3232;"
+    Dim conn As New MySqlConnection(cadena)
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -75,14 +77,17 @@ Public Class Actualitzar_Productes
     End Sub
 
     Private Sub LoadDataGrid()
-        Dim conn As New ConexioBD()
-        conn.ObrirConexio()
-        tabla.DataSource = conn.EjecutarConsulta("SELECT * FROM productes")
-        conn.CerrarConexion()
+        Dim query As String = "SELECT * FROM productes"
+        Dim adapter As MySqlDataAdapter = New MySqlDataAdapter(query, conn)
+        Dim table As DataTable = New DataTable()
+        adapter.Fill(table)
+        tabla.DataSource = table
+
+
     End Sub
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim conn As New ConexioBD()
         Dim command As MySqlCommand = New MySqlCommand()
+        command.Connection = conn
         command.CommandText = "UPDATE productes SET ID_Categoria = @ID_Categoria, preu = @preu, stock = @stock, marca = @marca, model = @model, especificacions = @especificacions, imatge = @imatge, actiu = @actiu WHERE ID_Producte = @ID_Producte"
         command.Parameters.AddWithValue("@ID_Categoria", "")
         command.Parameters.AddWithValue("@preu", "")
@@ -105,9 +110,9 @@ Public Class Actualitzar_Productes
                 command.Parameters("@imatge").Value = row.Cells("imatge").Value.ToString()
                 command.Parameters("@actiu").Value = row.Cells("actiu").Value.ToString()
                 command.Parameters("@ID_Producte").Value = row.Cells("ID_Producte").Value.ToString()
-                conn.ObrirConexio()
+                conn.Open()
                 command.ExecuteNonQuery()
-                conn.CerrarConexion()
+                conn.Close()
             End If
         Next
 
