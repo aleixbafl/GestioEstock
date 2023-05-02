@@ -33,13 +33,13 @@ Partial Class Mostrar_Usuaris
         Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
         Me.minimitzar = New System.Windows.Forms.PictureBox()
         Me.tanca = New System.Windows.Forms.PictureBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.taula = New System.Windows.Forms.DataGridView()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.taula, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label6
@@ -172,13 +172,13 @@ Partial Class Mostrar_Usuaris
         Me.tanca.TabIndex = 31
         Me.tanca.TabStop = False
         '
-        'DataGridView1
+        'taula
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(23, 244)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(852, 219)
-        Me.DataGridView1.TabIndex = 84
+        Me.taula.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.taula.Location = New System.Drawing.Point(23, 244)
+        Me.taula.Name = "taula"
+        Me.taula.Size = New System.Drawing.Size(852, 219)
+        Me.taula.TabIndex = 84
         '
         'Mostrar_Usuaris
         '
@@ -186,7 +186,7 @@ Partial Class Mostrar_Usuaris
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(900, 500)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.taula)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label5)
@@ -205,7 +205,7 @@ Partial Class Mostrar_Usuaris
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.taula, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -221,5 +221,5 @@ Partial Class Mostrar_Usuaris
     Friend WithEvents adaptarFinestra As PictureBox
     Friend WithEvents minimitzar As PictureBox
     Friend WithEvents tanca As PictureBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents taula As DataGridView
 End Class

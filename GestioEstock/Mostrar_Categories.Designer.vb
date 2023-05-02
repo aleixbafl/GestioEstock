@@ -33,11 +33,13 @@ Partial Class Mostrar_Categories
         Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
         Me.minimitzar = New System.Windows.Forms.PictureBox()
         Me.tanca = New System.Windows.Forms.PictureBox()
+        Me.taula = New System.Windows.Forms.DataGridView()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.taula, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label6
@@ -170,12 +172,22 @@ Partial Class Mostrar_Categories
         Me.tanca.TabIndex = 21
         Me.tanca.TabStop = False
         '
+        'taula
+        '
+        Me.taula.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.taula.Location = New System.Drawing.Point(27, 233)
+        Me.taula.Name = "taula"
+        Me.taula.RowHeadersWidth = 51
+        Me.taula.Size = New System.Drawing.Size(848, 232)
+        Me.taula.TabIndex = 64
+        '
         'Mostrar_Categories
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(900, 500)
+        Me.Controls.Add(Me.taula)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label5)
@@ -194,6 +206,7 @@ Partial Class Mostrar_Categories
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.minimitzar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.taula, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -209,4 +222,5 @@ Partial Class Mostrar_Categories
     Friend WithEvents adaptarFinestra As PictureBox
     Friend WithEvents minimitzar As PictureBox
     Friend WithEvents tanca As PictureBox
+    Friend WithEvents taula As DataGridView
 End Class

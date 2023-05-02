@@ -72,4 +72,14 @@
         Menu_Productes.Show()
         Me.Close()
     End Sub
+
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        tanca.BringToFront()
+        minimitzar.BringToFront()
+        Dim conn As New ConexioBD()
+        conn.ObrirConexio()
+        taula.DataSource = conn.EjecutarConsulta("SELECT * FROM productes")
+        conn.CerrarConexion()
+    End Sub
 End Class
