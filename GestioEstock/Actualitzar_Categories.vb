@@ -1,4 +1,8 @@
-﻿Public Class Actualitzar_Categories
+﻿Imports MySqlConnector
+
+Public Class Actualitzar_Categories
+    Dim cadena As String = "Server=sql965.main-hosting.eu;Database=u346867692_gestiorEstoc;Uid=u346867692_gestiorEstoc;Pwd=Fat/3232;"
+    Dim conn As New MySqlConnection(cadena)
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -70,5 +74,9 @@
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Menu_Categories.Show()
         Me.Close()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
     End Sub
 End Class

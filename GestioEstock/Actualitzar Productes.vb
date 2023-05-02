@@ -88,7 +88,7 @@ Public Class Actualitzar_Productes
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim command As MySqlCommand = New MySqlCommand()
         command.Connection = conn
-        command.CommandText = "UPDATE productes SET ID_Categoria = @ID_Categoria, preu = @preu, stock = @stock, marca = @marca, model = @model, especificacions = @especificacions, imatge = @imatge, actiu = @actiu WHERE ID_Producte = @ID_Producte"
+        command.CommandText = "UPDATE categories SET ID_Categoria = @ID_Categoria, preu = @preu, stock = @stock, marca = @marca, model = @model, especificacions = @especificacions, imatge = @imatge, actiu = @actiu WHERE ID_Producte = @ID_Producte"
         command.Parameters.AddWithValue("@ID_Categoria", "")
         command.Parameters.AddWithValue("@preu", "")
         command.Parameters.AddWithValue("@stock", "")
