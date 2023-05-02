@@ -73,12 +73,9 @@ Public Class MenuPrinEmpleat
         tanca.BringToFront()
         minimitzar.BringToFront()
     End Sub
-
-
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Usuari = insertUsuari.Text
-        Dim contrasenya As String = insertContrasenya.Text
+        Me.Hide()
+        MenuPrincipal.Show()
     End Sub
 
 End Class

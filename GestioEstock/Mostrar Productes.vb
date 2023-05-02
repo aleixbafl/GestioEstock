@@ -1,4 +1,7 @@
-﻿Public Class Mostrar_Productes
+﻿Imports System.Data.SqlClient
+Imports MySqlConnector
+
+Public Class Mostrar_Productes
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -65,6 +68,10 @@
     Private Sub Menu_Usuaris_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
+        Dim conn As New ConexioBD()
+        conn.ObrirConexio()
+        taula.DataSource = conn.EjecutarConsulta("SELECT * FROM productes")
+        conn.CerrarConexion()
     End Sub
     Private Sub Mostrar_Productes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -73,5 +80,14 @@
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Menu_Productes.Show()
         Me.Close()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        tanca.BringToFront()
+        minimitzar.BringToFront()
+        Dim conn As New ConexioBD()
+        conn.ObrirConexio()
+        taula.DataSource = conn.EjecutarConsulta("SELECT * FROM productes")
+        conn.CerrarConexion()
     End Sub
 End Class

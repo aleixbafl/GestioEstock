@@ -34,6 +34,7 @@ Partial Class MenuPrinEmpleat
         Me.minimitzar = New System.Windows.Forms.PictureBox()
         Me.tanca = New System.Windows.Forms.PictureBox()
         Me.login = New System.Windows.Forms.Label()
+        Me.MySqlDataAdapter1 = New MySqlConnector.MySqlDataAdapter()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,7 +51,7 @@ Partial Class MenuPrinEmpleat
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(469, 431)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(195, 39)
         Me.Button1.TabIndex = 5
@@ -90,7 +91,7 @@ Partial Class MenuPrinEmpleat
         Me.insertUsuari.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.insertUsuari.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.insertUsuari.Location = New System.Drawing.Point(469, 250)
-        Me.insertUsuari.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.insertUsuari.Margin = New System.Windows.Forms.Padding(4)
         Me.insertUsuari.Name = "insertUsuari"
         Me.insertUsuari.Size = New System.Drawing.Size(252, 34)
         Me.insertUsuari.TabIndex = 9
@@ -100,7 +101,7 @@ Partial Class MenuPrinEmpleat
         Me.insertContrasenya.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.insertContrasenya.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.insertContrasenya.Location = New System.Drawing.Point(469, 335)
-        Me.insertContrasenya.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.insertContrasenya.Margin = New System.Windows.Forms.Padding(4)
         Me.insertContrasenya.Name = "insertContrasenya"
         Me.insertContrasenya.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.insertContrasenya.Size = New System.Drawing.Size(252, 34)
@@ -180,6 +181,14 @@ Partial Class MenuPrinEmpleat
         Me.login.Text = "Login"
         Me.login.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
+        'MySqlDataAdapter1
+        '
+        Me.MySqlDataAdapter1.DeleteCommand = Nothing
+        Me.MySqlDataAdapter1.InsertCommand = Nothing
+        Me.MySqlDataAdapter1.SelectCommand = Nothing
+        Me.MySqlDataAdapter1.UpdateBatchSize = 0
+        Me.MySqlDataAdapter1.UpdateCommand = Nothing
+        '
         'MenuPrinEmpleat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -223,4 +232,5 @@ Partial Class MenuPrinEmpleat
     Friend WithEvents insertUsuari As TextBox
     Friend WithEvents insertContrasenya As TextBox
     Friend WithEvents login As Label
+    Friend WithEvents MySqlDataAdapter1 As MySqlConnector.MySqlDataAdapter
 End Class
