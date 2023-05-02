@@ -3,8 +3,6 @@ Imports MySqlConnector
 
 Public Class MenuPrinEmpleat
     Public Usuari As String
-    Dim connStr As String = "server=sql965.main-hosting.eu;user=u346867692_gestiorEstoc;password=Fat/3232;database=u346867692_gestiorEstoc;port=3306;"
-    Dim conn As New MySqlConnection(connStr)
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -71,6 +69,8 @@ Public Class MenuPrinEmpleat
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
+        Dim miConexion As New ConexioBD()
+        miConexion.ObrirConexio()
     End Sub
 
 
@@ -79,7 +79,6 @@ Public Class MenuPrinEmpleat
         If insertUsuari.Text <> "" And insertContrasenya.Text <> "" Then
             Me.Hide()
             MenuPrincipal.Show()
-
         Else
             MessageBox.Show("Introdueix l'usuari i la contrasenya", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If

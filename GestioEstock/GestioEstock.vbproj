@@ -129,6 +129,7 @@
     <Compile Include="Actualitzar_Usuaris.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ConexioBD.vb" />
     <Compile Include="Eliminar Productes.Designer.vb">
       <DependentUpon>Eliminar Productes.vb</DependentUpon>
     </Compile>
