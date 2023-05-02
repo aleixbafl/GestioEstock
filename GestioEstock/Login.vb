@@ -84,4 +84,5 @@ Public Class MenuPrinEmpleat
             MessageBox.Show("Introdueix l'usuari i la contrasenya", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
     End Sub
+
 End Class
