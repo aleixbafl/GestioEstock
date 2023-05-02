@@ -1,8 +1,11 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Collections.ObjectModel
+Imports System.Data.SqlClient
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
+Imports MySql.Data.MySqlClient
 Imports MySqlConnector
 
 Public Class MenuPrinEmpleat
-    Public Usuari As String
+    Public Usuari As String = ""
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -69,19 +72,13 @@ Public Class MenuPrinEmpleat
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
-        Dim miConexion As New ConexioBD()
-        miConexion.ObrirConexio()
     End Sub
 
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If insertUsuari.Text <> "" And insertContrasenya.Text <> "" Then
-            Me.Hide()
-            MenuPrincipal.Show()
-        Else
-            MessageBox.Show("Introdueix l'usuari i la contrasenya", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        End If
+        Usuari = insertUsuari.Text
+        Dim contrasenya As String = insertContrasenya.Text
     End Sub
 
 End Class
