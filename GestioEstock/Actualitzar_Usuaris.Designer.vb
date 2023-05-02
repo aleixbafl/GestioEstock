@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Actualitzar_Categories
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class Actualitzar_Usuaris
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,15 +20,15 @@ Partial Class Actualitzar_Categories
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Actualitzar_Categories))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Actualitzar_Usuaris))
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.barraSuperiorPartBotons = New System.Windows.Forms.PictureBox()
         Me.barraSuperiorMoure = New System.Windows.Forms.PictureBox()
         Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
@@ -42,6 +42,14 @@ Partial Class Actualitzar_Categories
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(23, 244)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(852, 219)
+        Me.DataGridView1.TabIndex = 95
+        '
         'Label6
         '
         Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -52,7 +60,7 @@ Partial Class Actualitzar_Categories
         Me.Label6.Location = New System.Drawing.Point(183, 189)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(143, 28)
-        Me.Label6.TabIndex = 40
+        Me.Label6.TabIndex = 94
         Me.Label6.Text = "Tornar Enrere"
         '
         'Button5
@@ -66,7 +74,7 @@ Partial Class Actualitzar_Categories
         Me.Button5.Location = New System.Drawing.Point(449, 185)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(146, 32)
-        Me.Button5.TabIndex = 39
+        Me.Button5.TabIndex = 93
         Me.Button5.Text = "Entrar"
         Me.Button5.UseVisualStyleBackColor = False
         '
@@ -80,7 +88,7 @@ Partial Class Actualitzar_Categories
         Me.Label5.Location = New System.Drawing.Point(337, 66)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(151, 28)
-        Me.Label5.TabIndex = 38
+        Me.Label5.TabIndex = 92
         Me.Label5.Text = "Que Vols Fer ?"
         '
         'Label1
@@ -92,9 +100,9 @@ Partial Class Actualitzar_Categories
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(183, 128)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(192, 28)
-        Me.Label1.TabIndex = 37
-        Me.Label1.Text = "Mostrar Categories"
+        Me.Label1.Size = New System.Drawing.Size(204, 28)
+        Me.Label1.TabIndex = 91
+        Me.Label1.Text = "Actualitzar Usuaris"
         '
         'Button1
         '
@@ -107,17 +115,9 @@ Partial Class Actualitzar_Categories
         Me.Button1.Location = New System.Drawing.Point(449, 128)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(146, 32)
-        Me.Button1.TabIndex = 36
+        Me.Button1.TabIndex = 90
         Me.Button1.Text = "Entrar"
         Me.Button1.UseVisualStyleBackColor = False
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(26, 253)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(852, 220)
-        Me.DataGridView1.TabIndex = 83
         '
         'barraSuperiorPartBotons
         '
@@ -127,7 +127,7 @@ Partial Class Actualitzar_Categories
         Me.barraSuperiorPartBotons.Margin = New System.Windows.Forms.Padding(2)
         Me.barraSuperiorPartBotons.Name = "barraSuperiorPartBotons"
         Me.barraSuperiorPartBotons.Size = New System.Drawing.Size(64, 43)
-        Me.barraSuperiorPartBotons.TabIndex = 35
+        Me.barraSuperiorPartBotons.TabIndex = 89
         Me.barraSuperiorPartBotons.TabStop = False
         '
         'barraSuperiorMoure
@@ -139,7 +139,7 @@ Partial Class Actualitzar_Categories
         Me.barraSuperiorMoure.Margin = New System.Windows.Forms.Padding(2)
         Me.barraSuperiorMoure.Name = "barraSuperiorMoure"
         Me.barraSuperiorMoure.Size = New System.Drawing.Size(837, 43)
-        Me.barraSuperiorMoure.TabIndex = 34
+        Me.barraSuperiorMoure.TabIndex = 88
         Me.barraSuperiorMoure.TabStop = False
         '
         'adaptarFinestra
@@ -151,7 +151,7 @@ Partial Class Actualitzar_Categories
         Me.adaptarFinestra.Name = "adaptarFinestra"
         Me.adaptarFinestra.Size = New System.Drawing.Size(19, 20)
         Me.adaptarFinestra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.adaptarFinestra.TabIndex = 33
+        Me.adaptarFinestra.TabIndex = 87
         Me.adaptarFinestra.TabStop = False
         '
         'minimitzar
@@ -164,7 +164,7 @@ Partial Class Actualitzar_Categories
         Me.minimitzar.Name = "minimitzar"
         Me.minimitzar.Size = New System.Drawing.Size(19, 20)
         Me.minimitzar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.minimitzar.TabIndex = 32
+        Me.minimitzar.TabIndex = 86
         Me.minimitzar.TabStop = False
         '
         'tanca
@@ -177,10 +177,10 @@ Partial Class Actualitzar_Categories
         Me.tanca.Name = "tanca"
         Me.tanca.Size = New System.Drawing.Size(19, 20)
         Me.tanca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.tanca.TabIndex = 31
+        Me.tanca.TabIndex = 85
         Me.tanca.TabStop = False
         '
-        'Actualitzar_Categories
+        'Actualitzar_Usuaris
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -198,8 +198,8 @@ Partial Class Actualitzar_Categories
         Me.Controls.Add(Me.minimitzar)
         Me.Controls.Add(Me.tanca)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Actualitzar_Categories"
-        Me.Text = "Actualitzar_Categories"
+        Me.Name = "Actualitzar_Usuaris"
+        Me.Text = "Actualitzar_Usuaris"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).EndInit()
@@ -211,6 +211,7 @@ Partial Class Actualitzar_Categories
 
     End Sub
 
+    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label6 As Label
     Friend WithEvents Button5 As Button
     Friend WithEvents Label5 As Label
@@ -221,5 +222,4 @@ Partial Class Actualitzar_Categories
     Friend WithEvents adaptarFinestra As PictureBox
     Friend WithEvents minimitzar As PictureBox
     Friend WithEvents tanca As PictureBox
-    Friend WithEvents DataGridView1 As DataGridView
 End Class

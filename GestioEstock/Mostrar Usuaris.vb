@@ -1,4 +1,4 @@
-﻿Public Class Eliminar_Categories
+﻿Public Class Mostrar_Usuaris
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -68,7 +68,7 @@
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Menu_Categories.Show()
+        Menu_Usuaris.Show()
         Me.Close()
     End Sub
 End Class

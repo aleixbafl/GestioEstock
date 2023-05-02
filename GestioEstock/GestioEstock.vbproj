@@ -123,10 +123,22 @@
     <Compile Include="Actualitzar_Categories.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Actualitzar_Usuaris.Designer.vb">
+      <DependentUpon>Actualitzar_Usuaris.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualitzar_Usuaris.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Eliminar Productes.Designer.vb">
       <DependentUpon>Eliminar Productes.vb</DependentUpon>
     </Compile>
     <Compile Include="Eliminar Productes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar Usuaris.Designer.vb">
+      <DependentUpon>Eliminar Usuaris.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar Usuaris.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Eliminar_Categories.Designer.vb">
@@ -139,6 +151,12 @@
       <DependentUpon>Insert Productes.vb</DependentUpon>
     </Compile>
     <Compile Include="Insert Productes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertar Usuaris.Designer.vb">
+      <DependentUpon>Insertar Usuaris.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Insertar Usuaris.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Insertar_Categories.Designer.vb">
@@ -184,6 +202,12 @@
     <Compile Include="Mostrar Productes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Mostrar Usuaris.Designer.vb">
+      <DependentUpon>Mostrar Usuaris.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mostrar Usuaris.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Mostrar_Categories.Designer.vb">
       <DependentUpon>Mostrar_Categories.vb</DependentUpon>
     </Compile>
@@ -214,14 +238,23 @@
     <EmbeddedResource Include="Actualitzar_Categories.resx">
       <DependentUpon>Actualitzar_Categories.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Actualitzar_Usuaris.resx">
+      <DependentUpon>Actualitzar_Usuaris.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Eliminar Productes.resx">
       <DependentUpon>Eliminar Productes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar Usuaris.resx">
+      <DependentUpon>Eliminar Usuaris.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Eliminar_Categories.resx">
       <DependentUpon>Eliminar_Categories.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Insert Productes.resx">
       <DependentUpon>Insert Productes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertar Usuaris.resx">
+      <DependentUpon>Insertar Usuaris.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Insertar_Categories.resx">
       <DependentUpon>Insertar_Categories.vb</DependentUpon>
@@ -243,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mostrar Productes.resx">
       <DependentUpon>Mostrar Productes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mostrar Usuaris.resx">
+      <DependentUpon>Mostrar Usuaris.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mostrar_Categories.resx">
       <DependentUpon>Mostrar_Categories.vb</DependentUpon>

@@ -47,3 +47,29 @@ D:\estudis\git_hub_descktop\GestioEstock\GestioEstock\bin\Debug\System.Numerics.
 D:\estudis\git_hub_descktop\GestioEstock\GestioEstock\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\estudis\git_hub_descktop\GestioEstock\GestioEstock\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\estudis\git_hub_descktop\GestioEstock\GestioEstock\obj\Debug\GestioEstock.vbproj.CopyComplete
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Actualitzar_Productes.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Actualitzar_Categories.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Eliminar_Productes.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Eliminar_Categories.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Insert_Productes.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Insertar_Categories.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Mostrar_Productes.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Mostrar_Categories.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\MySqlConnector.dll
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\System.Buffers.dll
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\System.Memory.dll
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\System.Numerics.Vectors.dll
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\MySqlConnector.xml
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\System.Buffers.xml
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\System.Memory.xml
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\System.Numerics.Vectors.xml
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.vbproj.CopyComplete
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Mostrar_Usuaris.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Actualitzar_Usuaris.resources
+D:\DAM\M2 - BASE DE DADES\Visual Basic Projects\GestioEstock\GestioEstock\obj\Debug\GestioEstock.Eliminar_Usuaris.resources

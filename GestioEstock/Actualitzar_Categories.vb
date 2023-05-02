@@ -66,4 +66,9 @@
         tanca.BringToFront()
         minimitzar.BringToFront()
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Menu_Categories.Show()
+        Me.Close()
+    End Sub
 End Class
