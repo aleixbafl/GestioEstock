@@ -1,4 +1,5 @@
-﻿Imports MySqlConnector
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports MySqlConnector
 
 Public Class Actualitzar_Categories
     Dim cadena As String = "Server=sql965.main-hosting.eu;Database=u346867692_gestiorEstoc;Uid=u346867692_gestiorEstoc;Pwd=Fat/3232;"
@@ -69,14 +70,39 @@ Public Class Actualitzar_Categories
     Private Sub Menu_Categories_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
+        LoadDataGrid()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Menu_Categories.Show()
         Me.Close()
     End Sub
-
+    Private Sub LoadDataGrid()
+        Dim query As String = "SELECT * FROM categories"
+        Dim adapter As MySqlDataAdapter = New MySqlDataAdapter(query, conn)
+        Dim table As DataTable = New DataTable()
+        adapter.Fill(table)
+        tabla.DataSource = table
+    End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim command As MySqlCommand = New MySqlCommand()
+        command.Connection = conn
+        command.CommandText = "UPDATE categories SET categoria = @categoria, ID_Categoria_Pare = @ID_Categoria_Pare WHERE ID_Categoria = @ID_Categoria"
+        command.Parameters.AddWithValue("@categoria", "")
+        command.Parameters.AddWithValue("@ID_Categoria_Pare", "")
+        command.Parameters.AddWithValue("@ID_Categoria", "")
 
+        For Each row As DataGridViewRow In tabla.Rows
+            If Not row.IsNewRow Then
+                command.Parameters("@categoria").Value = row.Cells("categoria").Value.ToString()
+                command.Parameters("@ID_Categoria_Pare").Value = row.Cells("ID_Categoria_Pare").Value.ToString()
+                command.Parameters("@ID_Categoria").Value = row.Cells("ID_Categoria").Value.ToString()
+                conn.Open()
+                command.ExecuteNonQuery()
+                conn.Close()
+            End If
+        Next
+
+        LoadDataGrid()
     End Sub
 End Class

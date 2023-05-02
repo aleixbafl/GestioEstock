@@ -82,13 +82,11 @@ Public Class Actualitzar_Productes
         Dim table As DataTable = New DataTable()
         adapter.Fill(table)
         tabla.DataSource = table
-
-
     End Sub
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim command As MySqlCommand = New MySqlCommand()
         command.Connection = conn
-        command.CommandText = "UPDATE categories SET ID_Categoria = @ID_Categoria, preu = @preu, stock = @stock, marca = @marca, model = @model, especificacions = @especificacions, imatge = @imatge, actiu = @actiu WHERE ID_Producte = @ID_Producte"
+        command.CommandText = "UPDATE productes SET ID_Categoria = @ID_Categoria, preu = @preu, stock = @stock, marca = @marca, model = @model, especificacions = @especificacions, imatge = @imatge, actiu = @actiu WHERE ID_Producte = @ID_Producte"
         command.Parameters.AddWithValue("@ID_Categoria", "")
         command.Parameters.AddWithValue("@preu", "")
         command.Parameters.AddWithValue("@stock", "")
@@ -101,6 +99,7 @@ Public Class Actualitzar_Productes
 
         For Each row As DataGridViewRow In tabla.Rows
             If Not row.IsNewRow Then
+
                 command.Parameters("@ID_Categoria").Value = row.Cells("ID_Categoria").Value.ToString()
                 command.Parameters("@preu").Value = row.Cells("preu").Value.ToString()
                 command.Parameters("@stock").Value = row.Cells("stock").Value.ToString()
