@@ -1,4 +1,8 @@
-﻿Public Class Actualitzar_Usuaris
+﻿Imports MySqlConnector
+
+Public Class Actualitzar_Usuaris
+    Dim cadena As String = "Server=sql965.main-hosting.eu;Database=u346867692_gestiorEstoc;Uid=u346867692_gestiorEstoc;Pwd=Fat/3232;AllowZeroDateTime=True;"
+    Dim conn As New MySqlConnection(cadena)
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -65,10 +69,51 @@
     Private Sub Menu_Categories_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
+        LoadDataGrid()
+    End Sub
+    Private Sub LoadDataGrid()
+        Dim query As String = "SELECT * FROM usuari"
+        Dim adapter As MySqlDataAdapter = New MySqlDataAdapter(query, conn)
+        Dim table As DataTable = New DataTable()
+        adapter.Fill(table)
+        tabla.DataSource = table
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Menu_Usuaris.Show()
         Me.Close()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim command As MySqlCommand = New MySqlCommand()
+        command.Connection = conn
+        command.CommandText = "UPDATE usuari SET DNI = @DNI, nomUsuari = @nomUsuari, nom = @nom, cognom = @cognom, dataNaixe = @dataNaixe, correuElect = @correuElect, contrarenya = @contrarenya WHERE ID_Usuari = @ID_Usuari"
+        command.Parameters.AddWithValue("@DNI", "")
+        command.Parameters.AddWithValue("@nomUsuari", "")
+        command.Parameters.AddWithValue("@nom", "")
+        command.Parameters.AddWithValue("@cognom", "")
+        command.Parameters.AddWithValue("@dataNaixe", "")
+        command.Parameters.AddWithValue("@correuElect", "")
+        command.Parameters.AddWithValue("@contrarenya", "")
+        command.Parameters.AddWithValue("@ID_Usuari", "")
+
+        For Each row As DataGridViewRow In tabla.Rows
+            If Not row.IsNewRow Then
+
+                command.Parameters("@DNI").Value = row.Cells("DNI").Value.ToString()
+                command.Parameters("@nomUsuari").Value = row.Cells("nomUsuari").Value.ToString()
+                command.Parameters("@nom").Value = row.Cells("nom").Value.ToString()
+                command.Parameters("@cognom").Value = row.Cells("cognom").Value.ToString()
+                command.Parameters("@dataNaixe").Value = row.Cells("dataNaixe").Value.ToString()
+                command.Parameters("@correuElect").Value = row.Cells("correuElect").Value.ToString()
+                command.Parameters("@contrarenya").Value = row.Cells("contrarenya").Value.ToString()
+                command.Parameters("@ID_Usuari").Value = row.Cells("ID_Usuari").Value.ToString()
+                conn.Open()
+                command.ExecuteNonQuery()
+                conn.Close()
+            End If
+        Next
+
+        LoadDataGrid()
     End Sub
 End Class

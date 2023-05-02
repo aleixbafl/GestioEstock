@@ -23,7 +23,7 @@ Partial Class Actualitzar_Usuaris
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Actualitzar_Usuaris))
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.tabla = New System.Windows.Forms.DataGridView()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -34,7 +34,7 @@ Partial Class Actualitzar_Usuaris
         Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
         Me.minimitzar = New System.Windows.Forms.PictureBox()
         Me.tanca = New System.Windows.Forms.PictureBox()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.tabla, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -42,13 +42,13 @@ Partial Class Actualitzar_Usuaris
         CType(Me.tanca, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DataGridView1
+        'tabla
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(23, 244)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(852, 219)
-        Me.DataGridView1.TabIndex = 95
+        Me.tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.tabla.Location = New System.Drawing.Point(23, 244)
+        Me.tabla.Name = "tabla"
+        Me.tabla.Size = New System.Drawing.Size(852, 219)
+        Me.tabla.TabIndex = 95
         '
         'Label6
         '
@@ -186,7 +186,7 @@ Partial Class Actualitzar_Usuaris
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(900, 500)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.tabla)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label5)
@@ -200,7 +200,7 @@ Partial Class Actualitzar_Usuaris
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Actualitzar_Usuaris"
         Me.Text = "Actualitzar_Usuaris"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.tabla, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).EndInit()
@@ -211,7 +211,7 @@ Partial Class Actualitzar_Usuaris
 
     End Sub
 
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents tabla As DataGridView
     Friend WithEvents Label6 As Label
     Friend WithEvents Button5 As Button
     Friend WithEvents Label5 As Label
