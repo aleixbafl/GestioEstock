@@ -65,6 +65,10 @@
     Private Sub Menu_Usuaris_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
+        Dim conn As New ConexioBD()
+        conn.ObrirConexio()
+        taula.DataSource = conn.EjecutarConsulta("SELECT * FROM productes")
+        conn.CerrarConexion()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
@@ -80,5 +84,12 @@
 
     End Sub
 
-
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Insertar.Click
+        Dim conn As New ConexioBD()
+        conn.ObrirConexio()
+        Dim consulta As String = "INSERT INTO `productes`(`ID_Producte`, `ID_Categoria`, `preu`, `stock`, `marca`, `model`, `especificacions`, `imatge`, `actiu`) VALUES ('" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "','" & TextBox5.Text & "','" & TextBox6.Text & "','" & TextBox7.Text & "','" & TextBox8.Text & "','" & TextBox9.Text & "')"
+        conn.EjecutarConsulta(consulta)
+        taula.DataSource = conn.EjecutarConsulta("SELECT * FROM productes")
+        conn.CerrarConexion()
+    End Sub
 End Class

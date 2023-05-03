@@ -5,7 +5,7 @@ Imports MySql.Data.MySqlClient
 Imports MySqlConnector
 
 Public Class MenuPrinEmpleat
-    Public Usuari As String = ""
+    Public Usuari As String
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -74,8 +74,24 @@ Public Class MenuPrinEmpleat
         minimitzar.BringToFront()
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Hide()
-        MenuPrincipal.Show()
+        Dim conn As New ConexioBD()
+        conn.ObrirConexio()
+        If insertUsuari.Text <> "" And insertContrasenya.Text <> "" Then
+            Dim comprovarUsuari As String = "SELECT * FROM usuari WHERE nomUsuari = '" & insertUsuari.Text & "' AND contrarenya = '" & insertContrasenya.Text & "';"
+            Dim resultat As DataTable
+            resultat = conn.EjecutarConsulta(comprovarUsuari)
+            If resultat.Rows.Count > 0 Then
+                Usuari = insertUsuari.Text
+                Me.Hide()
+                MenuPrincipal.Show()
+                MessageBox.Show("Has iniciart sessio.")
+            Else
+                MessageBox.Show("El usuari o contrasenya son incorrectes")
+            End If
+        Else
+            MessageBox.Show("Introduesix un usuari i la contrasenya")
+        End If
+        conn.CerrarConexion()
     End Sub
 
 End Class

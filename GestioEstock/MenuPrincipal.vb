@@ -67,8 +67,18 @@
     End Sub
 
     Private Sub MenuPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim usuari As String = MenuPrinEmpleat.Usuari
         tanca.BringToFront()
         minimitzar.BringToFront()
+        Dim consulta As String = "SELECT IF(a.ID_Usuari IS NOT NULL, 'Admin', 'Empleado') AS Rol FROM usuari u LEFT JOIN admin a ON u.ID_Usuari = a.ID_Usuari WHERE u.nomUsuari = '" & usuari & "';"
+        Dim conn As New ConexioBD()
+        conn.ObrirConexio()
+        Dim resultatConsulta As DataTable = conn.EjecutarConsulta(consulta)
+        conn.CerrarConexion()
+        Dim ValorColumna As String = resultatConsulta.Rows(0)("Rol").ToString()
+        If ValorColumna = "Empleado" Then
+            Button4.Visible = False
+        End If
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
