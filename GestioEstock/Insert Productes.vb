@@ -62,7 +62,7 @@
         Me.ResumeLayout()
     End Sub
 
-    Private Sub Menu_Usuaris_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Menu_Categories_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
         Dim conn As New ConexioBD()
