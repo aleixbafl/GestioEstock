@@ -1,4 +1,6 @@
-﻿Public Class Insertar_Usuaris
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+
+Public Class Insertar_Usuaris
     Private Sub cursorPuntero(obj As Object) 'Metode per a cambiar el curasor de puntero
         Cursor = Cursors.Hand
     End Sub
@@ -30,6 +32,7 @@
     End Sub
 
     Dim mouse_offset As Point
+    Public Property DateTimePicker1 As Object
     'Comprobe si el boto del ratoli es l'esquerra a l'hora de clicar la icona de cambiar el tamany de la finestra
     Private Sub adaptarFinestra_MouseDown(sender As Object, e As MouseEventArgs) Handles adaptarFinestra.MouseDown
         If e.Button = MouseButtons.Left Then
@@ -70,5 +73,21 @@
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Menu_Usuaris.Show()
         Me.Close()
+    End Sub
+
+    Private Sub inserta_Click(sender As Object, e As EventArgs) Handles inserta.Click
+        Dim conn As New ConexioBD()
+        conn.ObrirConexio()
+        dataNaixement.Text = DateTimePicker1.Value.ToString("yyyy-MM-dd")
+        If dni.Text <> "" And nomUsuari.Text <> "" And nom.Text <> "" And cognom.Text <> "" And dataNaixement.Text <> "" And correu.Text <> "" And contrasenya.Text <> "" Then
+            conn.EjecutarConsulta("INSERT INTO `usuari`(`DNI`, `nomUsuari`, `nom`, `cognom`, `dataNaixe`, `correuElect`, `contrarenya`) VALUES ('" & dni.Text & "','" & nomUsuari.Text & "','" & nom.Text & "','" & cognom.Text & "','" & dataNaixement.Text & "','" & correu.Text & "','" & contrasenya.Text & "')")
+        Else
+            MessageBox.Show("Has d'omplir tots els camps.")
+        End If
+        If admin.Checked Then
+
+        Else
+
+        End If
     End Sub
 End Class

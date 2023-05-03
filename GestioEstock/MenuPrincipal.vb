@@ -94,4 +94,10 @@
         Menu_Usuaris.Show()
         Me.Hide()
     End Sub
+
+    Private Sub tancaSessio_Click(sender As Object, e As EventArgs) Handles tancaSessio.Click
+        MenuPrinEmpleat.Show()
+        Me.Hide()
+        MenuPrinEmpleat.Usuari = ""
+    End Sub
 End Class

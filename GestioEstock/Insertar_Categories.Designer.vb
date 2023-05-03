@@ -25,11 +25,9 @@ Partial Class Insertar_Categories
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Insertar_Categories))
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.pare = New System.Windows.Forms.TextBox()
+        Me.categoria = New System.Windows.Forms.TextBox()
+        Me.taula = New System.Windows.Forms.DataGridView()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -40,7 +38,7 @@ Partial Class Insertar_Categories
         Me.adaptarFinestra = New System.Windows.Forms.PictureBox()
         Me.minimitzar = New System.Windows.Forms.PictureBox()
         Me.tanca = New System.Windows.Forms.PictureBox()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.taula, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,7 +53,7 @@ Partial Class Insertar_Categories
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(429, 115)
+        Me.Label4.Location = New System.Drawing.Point(241, 115)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(102, 28)
         Me.Label4.TabIndex = 91
@@ -68,59 +66,37 @@ Partial Class Insertar_Categories
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(609, 115)
+        Me.Label3.Location = New System.Drawing.Point(569, 115)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(198, 28)
+        Me.Label3.Size = New System.Drawing.Size(150, 28)
         Me.Label3.TabIndex = 90
-        Me.Label3.Text = "ID_Categoria_Pare"
+        Me.Label3.Text = "Categoria Pare"
         '
-        'Label1
+        'pare
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(164, 115)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(143, 28)
-        Me.Label1.TabIndex = 89
-        Me.Label1.Text = "ID_Categoria"
+        Me.pare.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.pare.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pare.Location = New System.Drawing.Point(546, 171)
+        Me.pare.Name = "pare"
+        Me.pare.Size = New System.Drawing.Size(199, 29)
+        Me.pare.TabIndex = 85
         '
-        'TextBox3
+        'categoria
         '
-        Me.TextBox3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox3.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(608, 171)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(199, 29)
-        Me.TextBox3.TabIndex = 85
+        Me.categoria.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.categoria.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.categoria.Location = New System.Drawing.Point(186, 171)
+        Me.categoria.Name = "categoria"
+        Me.categoria.Size = New System.Drawing.Size(199, 29)
+        Me.categoria.TabIndex = 84
         '
-        'TextBox1
+        'taula
         '
-        Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox1.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(377, 171)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(199, 29)
-        Me.TextBox1.TabIndex = 84
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox2.Font = New System.Drawing.Font("Monotype Corsiva", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(138, 171)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(199, 29)
-        Me.TextBox2.TabIndex = 83
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(33, 336)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(876, 276)
-        Me.DataGridView1.TabIndex = 82
+        Me.taula.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.taula.Location = New System.Drawing.Point(33, 336)
+        Me.taula.Name = "taula"
+        Me.taula.Size = New System.Drawing.Size(876, 276)
+        Me.taula.TabIndex = 82
         '
         'Label6
         '
@@ -260,11 +236,9 @@ Partial Class Insertar_Categories
         Me.ClientSize = New System.Drawing.Size(939, 639)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.pare)
+        Me.Controls.Add(Me.categoria)
+        Me.Controls.Add(Me.taula)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label5)
@@ -278,7 +252,7 @@ Partial Class Insertar_Categories
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Insertar_Categories"
         Me.Text = "Insertar_Categories"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.taula, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.barraSuperiorPartBotons, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.barraSuperiorMoure, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.adaptarFinestra, System.ComponentModel.ISupportInitialize).EndInit()
@@ -290,11 +264,9 @@ Partial Class Insertar_Categories
     End Sub
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents pare As TextBox
+    Friend WithEvents categoria As TextBox
+    Friend WithEvents taula As DataGridView
     Friend WithEvents Label6 As Label
     Friend WithEvents Button5 As Button
     Friend WithEvents Label5 As Label

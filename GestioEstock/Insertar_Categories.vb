@@ -23,6 +23,36 @@
     Private Sub Menu_Categories_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tanca.BringToFront()
         minimitzar.BringToFront()
+        Dim conn As New ConexioBD()
+        conn.ObrirConexio()
+        taula.DataSource = conn.EjecutarConsulta("SELECT * FROM categories")
+        conn.CerrarConexion()
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If categoria.Text <> "" And pare.Text = "" Then
+            Dim connect As New ConexioBD()
+            connect.ObrirConexio()
+            Dim consulta As String = "INSERT INTO `categories`(`categoria`) VALUES ('" & categoria.Text & "'); "
+            connect.EjecutarConsulta(consulta)
+            connect.CerrarConexion()
+        ElseIf categoria.Text <> "" And pare.Text <> "" Then
+            Dim connect As New ConexioBD()
+            connect.ObrirConexio()
+            Dim consulta As String = "INSERT INTO `categories`(`categoria`, `ID_Categoria_Pare`) VALUES ('" & categoria.Text & "','" & pare.Text & "')"
+            connect.EjecutarConsulta(consulta)
+            connect.CerrarConexion()
+        Else
+            MessageBox.Show("Com a mínim has d'introduir la categoria")
+        End If
+        Dim conn As New ConexioBD()
+        conn.ObrirConexio()
+        taula.DataSource = conn.EjecutarConsulta("SELECT * FROM categories")
+        conn.CerrarConexion()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        MenuPrincipal.Show()
+        Me.Hide()
+    End Sub
 End Class
